@@ -12,12 +12,14 @@
 # printinfo(70, 60, 50)
 
 
-expression = 10
+def test1(farg,*args):
+    print ("farg:",farg)
+    for value in args:
+        print ("args:",value)
 
+def test2(farg,**args):
+    print ("farg:",farg)
+    for key in args:
+        print ("key:%s  values:%s"%(key,args[key]))
 
-def printinfo(str):
-    return str
-
-
-print(printinfo(100))
-print(expression)
+test2()

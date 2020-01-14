@@ -7,6 +7,7 @@ class Employee:
         self.salary = salary
         self.empCount += 1
 
+
     def displayCount(self):
         print(self)
         print(self.__class__)
@@ -14,3 +15,7 @@ class Employee:
 
     def displayEmployee(self, something):
         print("Name : ", self.name,  ", Salary: ", self.salary, something)
+
+    @staticmethod
+    def speak(self):
+        print("speaking")

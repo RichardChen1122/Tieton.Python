@@ -1,5 +1,5 @@
 from package_runoob.runoob1 import print_func, print_func2, name
-from package_runoob.myclass import Employee
+from package_runoob.myclass import Employee 
 # 现在可以调用模块里包含的函数
 
 
@@ -36,6 +36,8 @@ class Child(Parent):  # 定义子类
         print('调用子类方法,设置子类属性')
         Child.childAttr = 1001
 
+# employee = Employee()
+# employee.displayCount
 
 c = Child()          # 实例化子类
 c.childMethod()      # 调用子类的方法
